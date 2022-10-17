@@ -6,11 +6,15 @@ public class Main {
 		Person Jhon = new Vegan();
 		Jhon.eat();
 		Jhon.speak();
+		Jhon.breathe();
+		Jhon.message();
 		
 		System.out.println("***************");
 		
 		Person Mia = new Nonvegan();
 		Mia.eat();
 		Mia.speak();
+		Mia.breathe();
+		Mia.message();
 	}
 }

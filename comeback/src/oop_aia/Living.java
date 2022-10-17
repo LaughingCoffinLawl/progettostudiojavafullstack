@@ -1,7 +1,5 @@
 package oop_aia;
 
-public class Living {
-	void breathe() {
-		
-	}
+public interface Living {
+	void breathe();
 }
