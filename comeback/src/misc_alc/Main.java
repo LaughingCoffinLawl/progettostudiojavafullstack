@@ -1,4 +1,4 @@
-package misc_al;
+package misc_alc;
 
 public class Main {
 
