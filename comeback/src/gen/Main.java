@@ -61,6 +61,5 @@ public class Main {
 				System.out.println("Element: " + iterator.next().getMyVariable() * 10);
 			}
 		}
-	 
 }
 
