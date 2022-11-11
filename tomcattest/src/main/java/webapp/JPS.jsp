@@ -7,9 +7,11 @@
 <title>Form Demo</title>
 </head>
 <body>
-<form action = "Submit.jsp" method="post"> //get put informations on the URL
-	Full name: <input type="text" name= "name"/><br/>
-	Gender: <input type="radio" name="gender" value ="male"> Male
+<%--This is for a page change with multiple file--%>
+<%--<form action="Submit.jsp" method="post">--%> 
+<form action="<%=request.getContextPath()%>/Main" method="post"> <%--"get" will display informations on the URL --%>
+	Full name: <input type="text" name= "name" required><br/>
+	Gender: <input type="radio" name="gender" value ="male" checked = checked> Male
 			<input type="radio" name="gender" value ="female"> Female <br/>
 	Language known: <input type="checkbox" name="language" value="english"> English
 				   <input type="checkbox" name="language" value="italian"> Italian

@@ -8,7 +8,6 @@ import java.util.ListIterator;
 public class Linked {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		LinkedList<String> countries = new LinkedList<>();
 		countries.add("India");

@@ -1,10 +1,8 @@
 package misc_arsbx;
 import java.util.Stack;
-import java.util.*;
 
 public class Stackk {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		Stack<Integer> demo = new Stack<>();
 		demo.push(0);

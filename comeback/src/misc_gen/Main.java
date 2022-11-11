@@ -1,4 +1,4 @@
-package gen;
+package misc_gen;
 
 import java.util.LinkedList;
 import java.util.List;

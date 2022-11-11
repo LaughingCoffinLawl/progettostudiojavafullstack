@@ -10,7 +10,6 @@ public class Main {
 	public static void main(String[] args) {
 		
 		List<Animal> animals = new ArrayList<>();
-		// TODO Auto-generated method stub
 		Animal myReptile = new Reptile();
 		Animal myFish = new Fish();
 		Animal myBird = new Bird();

@@ -10,11 +10,11 @@
 Name: <%= request.getParameter("name") %> <br/>
 Gender: <%= request.getParameter("gender") %> <br/>
 Language known: <% 
-String[] countries = request.getParameterValues("language");
-if (countries != null) {
-	for (int i = 0; i<countries.length;i++) {
+String[] languages = request.getParameterValues("language");
+if (languages != null) {
+	for (int i = 0; i<languages.length;i++) {
 		out.print("<br/>");
-		out.print(countries[i]);	
+		out.print(languages[i]);	
 	} 
 } else {
 	out.print("Not Selected");
