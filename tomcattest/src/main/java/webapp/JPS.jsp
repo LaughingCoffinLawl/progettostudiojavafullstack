@@ -9,7 +9,7 @@
 <body>
 <%--This is for a page change with multiple file--%>
 <%--<form action="Submit.jsp" method="post">--%> 
-<form action="<%=request.getContextPath()%>/Main" method="post"> <%--"get" will display informations on the URL --%>
+<form action="<%=request.getContextPath()%>/Servlet" method="post"> <%--"get" will display informations on the URL --%>
 	Full name: <input type="text" name= "name" required><br/>
 	Gender: <input type="radio" name="gender" value ="male" checked = checked> Male
 			<input type="radio" name="gender" value ="female"> Female <br/>
