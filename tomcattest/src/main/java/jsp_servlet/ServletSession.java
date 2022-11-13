@@ -43,8 +43,13 @@ public class ServletSession extends HttpServlet {
 			request.getSession().invalidate();
 			HttpSession newSession = request.getSession(true);
 			newSession.setMaxInactiveInterval(300);
+			
+			/* CREATION AND USE ON COOKIES
 			Cookie cUsername = new Cookie("username", username);
 			response.addCookie(cUsername);
+			CREATION AND USE ON COOKIES */ 
+			
+			newSession.setAttribute("username", username);
 			response.sendRedirect("memberArea.jsp");
 		} else {
 			response.sendRedirect("Login.jsp");
