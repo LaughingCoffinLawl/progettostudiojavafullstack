@@ -8,5 +8,6 @@
 </head>
 <body>
 <%--TREATED AS A WELCOME PAGE BY ECLIPSE PROJECT--%>
+<a href="<%=request.getContextPath()%>/ServletSession?action=login">Login</a>
 </body>
 </html>

@@ -26,7 +26,7 @@ if(cookies != null) {
 CREATION AND USE ON COOKIES */
 
 if (request.getSession().getAttribute("username") == null){
-	response.sendRedirect("Login.jsp");
+	response.sendRedirect(request.getContextPath()+"/ServletSession?action=login");
 }else{
 	username = request.getSession().getAttribute("username").toString();
 	sessionID = request.getSession().getId();	

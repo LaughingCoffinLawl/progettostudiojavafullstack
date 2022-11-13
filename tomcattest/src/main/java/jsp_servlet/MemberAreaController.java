@@ -33,10 +33,14 @@ public class MemberAreaController extends HttpServlet {
 		switch(action) {
 			case "destroy":
 				//destroy the session
+				//*
 				request.getSession().invalidate();
 				/* LOG-IN / LOG-OUT SYSTEM USING COOKIE (DO NOT RECOMMEND)
+				 * 
 				Cookie[] cookies = request.getCookies();
+				//*
 				//Expire cookie
+				//*
 				for(Cookie cookie: cookies) {
 					if (cookie.getName().equals("username")) {
 						cookie.setValue(null);
@@ -45,8 +49,16 @@ public class MemberAreaController extends HttpServlet {
 					}
 				}
 				//redirect to login page once logout
+				 * 
 				LOG-IN / LOG-OUT SYSTEM USING COOKIE (DO NOT RECOMMEND) */
-				response.sendRedirect("Login.jsp");
+				//*
+				//redirects to a page
+				//*
+				response.sendRedirect(request.getContextPath()+"/ServletSession?action=login");
+				break;
+			case "memberArea":
+				//creates the URL for the page
+				request.getRequestDispatcher("memberArea.jsp").forward(request, response);
 				break;
 			default:
 				break;
