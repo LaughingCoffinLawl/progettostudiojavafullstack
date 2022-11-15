@@ -9,7 +9,10 @@ public class HelloBean implements Serializable{
 	private String firstName;
 	private String lastName;
 	
-	public HelloBean() {}
+	public HelloBean() {
+		this.firstName = "Jhon";
+		this.lastName = "Doe";
+	}
 	
 	public String getFirstName() {
 		return firstName;
