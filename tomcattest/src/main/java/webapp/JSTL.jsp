@@ -20,11 +20,12 @@ ${user.firstName} <%--Get directly the variable even if it's private--%>
 </c:if>
 Hello User
 
+<%--Switch statements--%>
 <c:choose>
 	<c:when test="${param.lang == 'Java' }">
 	  Learning Java
 	</c:when>
-	<c:when test="${param.lang == 'PHP' }"> <%--Switch statements--%>
+	<c:when test="${param.lang == 'PHP' }"> 
 	  Learning PHP
 	</c:when>
 	<c:otherwise>
@@ -32,11 +33,13 @@ Hello User
 	</c:otherwise>
 </c:choose>
 
+<%--For statements--%>
 <c:forEach var="i" begin="0" end="29" step="3">
-${i}											<%--For statements--%>
+${i}											
 <br/>
 </c:forEach>
 
+<%--Foreach statements--%>
 <%
 		String[] names = new String[3];
 		names[0] = "Chaand";
@@ -44,25 +47,27 @@ ${i}											<%--For statements--%>
 		names[2] = "Nikita";
 	%>
 
-	<c:forEach items="<%=names%>" var="name">   <%--Foreach statements--%>
+	<c:forEach items="<%=names%>" var="name">   
 
 		${name}
 		<br />
 
 	</c:forEach>
 
+<%--Split statements--%>
 <%
 	String URL ="studyeasy.org";
 
 %>
-<c:forTokens items="<%=URL%>" delims="." var="temp">	<%--Split statements--%>
+<c:forTokens items="<%=URL%>" delims="." var="temp">	
 	${temp}
 <br/>
 </c:forTokens>
 
+<%--Try&Catch statements--%>
 <c:catch var="exception">
 <% int x=10/0; %>
-</c:catch>								<%--Try&Catch statements--%>
+</c:catch>								
 ${exception.message}
 
 <br/>

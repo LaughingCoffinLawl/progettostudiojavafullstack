@@ -7,6 +7,13 @@
 <title>AnotherPage</title>
 </head>
 <body>
-Another Page
+<%
+String URL = "<a href='http://studyeasy.org'>Home</a>";
+ServletContext context = getServletContext();
+context.setAttribute("url", URL);
+session.setAttribute("author", "Chaand");
+%>
+<!--${author}  -->
+${url} <%--This URL can be accessed from every new page we create--%>
 </body>
 </html>
