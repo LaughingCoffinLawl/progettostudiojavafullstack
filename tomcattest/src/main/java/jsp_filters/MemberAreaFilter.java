@@ -21,6 +21,11 @@ import javax.servlet.http.HttpServletResponse;
 public class MemberAreaFilter extends HttpFilter implements Filter {
        
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3894713864608898535L;
+
+	/**
      * @see HttpFilter#HttpFilter()
      */
     public MemberAreaFilter() {

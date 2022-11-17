@@ -13,7 +13,7 @@ ServletContext context = getServletContext();
 context.setAttribute("url", URL);
 session.setAttribute("author", "Chaand");
 %>
-<!--${author}  -->
+${author}
 ${url} <%--This URL can be accessed from every new page we create--%>
 </body>
 </html>
