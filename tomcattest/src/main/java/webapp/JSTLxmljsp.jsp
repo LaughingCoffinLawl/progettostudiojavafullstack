@@ -20,11 +20,24 @@ Name: <x:out select="$XMLDoc/users/user[2]/name"/>
 <table border=1>
 	<x:forEach select="$XMLDoc/users/user">
 	<tr>
-		<x:if select="age > 20">
+	<%-- 
+		<x:if select="age > 16">
 			<td><x:out select="name"/></td>
-			<td><x:out select="gender"/></td>
+			<td><x:out select="gender"/></td>     IF VARIANT
 			<td><x:out select="age"/></td>
-		</x:if>
+		</x:if> --%>
+	<x:choose>
+		<x:when select="gender='Female'">	
+			<td><i><b><x:out select="name" /></b></i></td>
+			<td><i><b><x:out select="gender" /></b></i></td>
+			<td><i><b><x:out select="age" /></b></i></td>
+		</x:when>
+	<x:otherwise>
+		<td><x:out select="name" /></td>
+		<td><x:out select="gender" /></td>
+		<td><x:out select="age" /></td>
+	</x:otherwise>
+	</x:choose>
 	</tr>
 	</x:forEach>
 </table>
