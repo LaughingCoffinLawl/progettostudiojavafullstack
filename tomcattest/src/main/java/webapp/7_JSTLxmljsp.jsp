@@ -11,7 +11,7 @@
 <title>XML Demo</title>
 </head>
 <body>
-<c:import url="/User.xml" var="XMLFile"/>
+<c:import url="/7_User.xml" var="XMLFile"/>
 <x:parse xml="${XMLFile}" var="XMLDoc"></x:parse>
 Name: <x:out select="$XMLDoc/users/user[2]/name"/>
 <br>Gender: <x:out select="$XMLDoc/users/user[3]/gender"/>

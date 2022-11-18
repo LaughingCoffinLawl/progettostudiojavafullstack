@@ -15,7 +15,7 @@
 <jsp:setProperty name="user" property="lastName" value="Veglia"/>
 New values has been set. --%>
 
-<form action="GetProperty.jsp" method="post">
+<form action="2_GetProperty.jsp" method="post">
 First Name: <input type="text" name="firstName" value='<jsp:getProperty property="firstName" name="user"/>'><br/>
 Last Name: <input type="text" name="lastName" value='<jsp:getProperty property="lastName" name="user"/>'><br/>
 <input type="submit" value="submit">

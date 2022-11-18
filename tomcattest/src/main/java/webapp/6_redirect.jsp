@@ -8,8 +8,8 @@
 <title>JSTL Demo</title>
 </head>
 <body>
-<a href="<c:url value="/AnotherPage.jsp" />">Another Page</a>
+<a href="<c:url value="/6_AnotherPage.jsp" />">Another Page</a>
 
-<c:redirect url="/AnotherPage.jsp"/>
+<c:redirect url="/6_AnotherPage.jsp"/>
 </body>
 </html>

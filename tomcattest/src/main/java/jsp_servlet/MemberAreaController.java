@@ -58,7 +58,7 @@ public class MemberAreaController extends HttpServlet {
 				break;
 			case "memberArea":
 				//creates the URL for the page
-				request.getRequestDispatcher("memberArea.jsp").forward(request, response);
+				request.getRequestDispatcher("3_memberArea.jsp").forward(request, response);
 				break;
 			default:
 				break;

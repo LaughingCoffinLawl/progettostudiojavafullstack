@@ -32,7 +32,7 @@ public class ServletSession extends HttpServlet {
 		switch (action) {
 		case "login":
 			//creates the URL for the page
-			request.getRequestDispatcher("Login.jsp").forward(request, response);
+			request.getRequestDispatcher("3_Login.jsp").forward(request, response);
 			break;
 		default:
 			break;
