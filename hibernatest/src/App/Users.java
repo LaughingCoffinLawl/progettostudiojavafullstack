@@ -2,7 +2,7 @@ package App;
 
 import javax.persistence.*;
 
-@Entity
+@Entity (name="users")
 @Table(name="users")
 public class Users {
 	

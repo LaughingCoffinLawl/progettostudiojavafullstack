@@ -1,8 +1,12 @@
 package App;
 
+import java.util.Iterator;
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+
 
 public class Main {
 
@@ -48,12 +52,23 @@ public class Main {
 			*/
 			
 			//DELETE A ROW
+			/*
 			Users myUser = new Users();
 			mySession.beginTransaction();
 			myUser = mySession.get(Users.class, 1);
 			mySession.delete(myUser);
 			mySession.getTransaction().commit();
 			System.out.println(myUser);
+			*/
+			
+			//LISTING RECORDS
+			mySession.beginTransaction();
+			
+			//this "from users" refers to the entinty name in the class
+			List<Users> users = mySession.createQuery("from users").getResultList(); 
+			
+			for (Users user : users) {
+			}
 			
 		} finally {
 			mySession.close();
