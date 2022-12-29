@@ -65,9 +65,12 @@ public class Main {
 			mySession.beginTransaction();
 			
 			//this "from users" refers to the entinty name in the class
-			List<Users> users = mySession.createQuery("from users").getResultList(); 
+			@SuppressWarnings("unchecked")
+			List<Users> users = mySession.createQuery("FROM users WHERE name = 'test' OR name like '%e%t'")
+								.getResultList(); 
 			
 			for (Users user : users) {
+				System.out.println(user);
 			}
 			
 		} finally {
