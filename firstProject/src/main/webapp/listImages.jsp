@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Image upload form</title>
+<title>Listing Images</title>
 </head>
 <body>
-<form action="ImageUpload?action=filesUpload" method="post" enctype="multipart/form-data">
-Select images <input type="file" name="files" multiple/>
-<input type="submit" value="upload"/>
+<form action="ImageUpload?action=listingImages" method="post" enctype="multipart/form-data">
+Images
+<%= request.getAttribute("images") %>
 </form>
 </body>
 </html>
