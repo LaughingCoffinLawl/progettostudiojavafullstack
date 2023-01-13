@@ -27,12 +27,35 @@ public class ImageUpload extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
+		//Prende parametri dai files jsp, action del form, richiama il metodo corrispondente
 		String action = request.getParameter("action");
 		
 		switch(action) {
+		//ImageUpload.java action del form
 		case "filesUpload":
 			filesUpload(request, response);
 			break;
+		//upload.java action del form
+		/*case "listingImages":
+			listingImages(request, response);
+			break;*/
+		default:
+			request.getRequestDispatcher("upload.jsp").forward(request, response);;
+		}
+	}
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		
+		//Prende parametri dai files jsp, action del form, richiama il metodo corrispondente
+		String action = request.getParameter("action");
+		
+		switch(action) {
+		//ImageUpload.java action del form
+		/*case "filesUpload":
+			filesUpload(request, response);
+			break;*/
+		//upload.java action del form
 		case "listingImages":
 			listingImages(request, response);
 			break;
@@ -45,7 +68,7 @@ public class ImageUpload extends HttpServlet {
 			throws ServletException, IOException {
 		List <UploadImages> images = new ImagesDAO().listFiles();
 		request.setAttribute("images", images);
-		request.setAttribute("path", "c:/images/");
+		request.setAttribute("path", path);
 		request.getRequestDispatcher("listImages.jsp").forward(request, response);
 	}
 

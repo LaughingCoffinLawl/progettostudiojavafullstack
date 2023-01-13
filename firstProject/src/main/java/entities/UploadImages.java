@@ -11,6 +11,8 @@ import javax.persistence.Table;
 @Table(name="images_upload")
 public class UploadImages {
 	
+	//Oggetto che richiama la struttura della table su DB per lavorare con Hibernate
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id")
