@@ -11,6 +11,7 @@
 Select images <input type="file" name="files" multiple/>
 <input type="submit" value="upload"/>
 <br>
+<%-- hyperlink per reindirizzamento a pagina con le immagini --%>
 <a href="${pageContext.request.contextPath}/ImageUpload?action=listingImages">Listing avaiable images</a>
 </form>
 </body>

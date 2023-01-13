@@ -30,6 +30,18 @@ public class UploadImages {
 	public UploadImages() {
 		
 	}
+	
+	public UploadImages(int id, String label, String caption) {
+		super();
+		this.id = id;
+		this.label = label;
+		this.caption = caption;
+	}
+
+	public UploadImages(String fileName) {
+		super();
+		this.fileName = fileName;
+	}
 
 	public int getId() {
 		return id;
@@ -61,11 +73,6 @@ public class UploadImages {
 
 	public void setCaption(String caption) {
 		this.caption = caption;
-	}
-
-	public UploadImages(String fileName) {
-		super();
-		this.fileName = fileName;
 	}
 
 	@Override

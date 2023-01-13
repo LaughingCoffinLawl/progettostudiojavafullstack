@@ -1,0 +1,251 @@
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version name:   Apache Tomcat/9.0.68
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Oct 3 2022 19:06:10 UTC
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version number: 9.0.68.0
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 11
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            10.0
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Program Files\Java\jdk-17.0.5
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           17.0.5+9-LTS-191
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\Users\elect\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\Program Files\Apache Software Foundation\Tomcat 9.0
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=C:\Users\elect\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=C:\Program Files\Apache Software Foundation\Tomcat 9.0
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dwtp.deploy=C:\Users\elect\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dfile.encoding=UTF-8
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -XX:+ShowCodeDetailsInExceptionMessages
+gen 13, 2023 10:31:28 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-17.0.5\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\elect\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\elect\AppData\Local\Programs\Python\Python39\;C:\Users\elect\AppData\Local\Microsoft\WindowsApps;C:\Users\elect\.dotnet\tools;C:\Users\elect\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\elect\AppData\Roaming\npm;C:\Users\elect\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1.1\bin;;;.]
+gen 13, 2023 10:31:28 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-8080"]
+gen 13, 2023 10:31:28 PM org.apache.catalina.startup.Catalina load
+INFO: Server initialization in [511] milliseconds
+gen 13, 2023 10:31:28 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Catalina]
+gen 13, 2023 10:31:28 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.68]
+gen 13, 2023 10:31:29 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+gen 13, 2023 10:31:30 PM java.util.ArrayList forEach
+WARNING: Name = project Property maxActive is not used in DBCP2, use maxTotal instead. maxTotal default value is 8. You have set value of "25" for "maxActive" property, which is being ignored.
+gen 13, 2023 10:31:30 PM java.util.ArrayList forEach
+WARNING: Name = project Property maxWait is not used in DBCP2 , use maxWaitMillis instead. maxWaitMillis default value is PT-0.001S. You have set value of "10000" for "maxWait" property, which is being ignored.
+gen 13, 2023 10:31:30 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+gen 13, 2023 10:31:32 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+gen 13, 2023 10:31:33 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+gen 13, 2023 10:31:33 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-8080"]
+gen 13, 2023 10:31:33 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in [4286] milliseconds
+gen 13, 2023 10:31:46 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.3.5.Final}
+gen 13, 2023 10:31:46 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+gen 13, 2023 10:31:47 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+gen 13, 2023 10:31:47 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+gen 13, 2023 10:31:47 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate_test]
+gen 13, 2023 10:31:47 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+gen 13, 2023 10:31:47 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+gen 13, 2023 10:31:47 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+Fri Jan 13 22:31:47 CET 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+gen 13, 2023 10:31:48 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+gen 13, 2023 10:31:48 PM org.hibernate.search.engine.Version <clinit>
+INFO: HSEARCH000034: Hibernate Search 5.8.0.Final
+gen 13, 2023 10:31:49 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: select files0_.id as id1_0_, files0_.caption as caption2_0_, files0_.file_name as file_nam3_0_, files0_.label as label4_0_ from files files0_
+gen 13, 2023 10:31:49 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+WARN: SQL Error: 1146, SQLState: 42S02
+gen 13, 2023 10:31:49 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+ERROR: Table 'hibernate_test.files' doesn't exist
+gen 13, 2023 10:31:49 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [org.studyeasy.FilesHandler] in context with path [/S23L06] threw exception
+javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1514)
+	at org.hibernate.query.Query.getResultList(Query.java:135)
+	at org.studyeasy.hibernate.DAO.FilesDAO.listFiles(FilesDAO.java:28)
+	at org.studyeasy.FilesHandler.listingImages(FilesHandler.java:68)
+	at org.studyeasy.FilesHandler.doGet(FilesHandler.java:47)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:69)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2167)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1930)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1892)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:937)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:340)
+	at org.hibernate.loader.Loader.doList(Loader.java:2689)
+	at org.hibernate.loader.Loader.doList(Loader.java:2672)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2506)
+	at org.hibernate.loader.Loader.list(Loader.java:2501)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:504)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:395)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:220)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1508)
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1537)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1505)
+	... 28 more
+Caused by: java.sql.SQLSyntaxErrorException: Table 'hibernate_test.files' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:975)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1025)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:60)
+	... 43 more
+
+gen 13, 2023 10:33:42 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+gen 13, 2023 10:33:42 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-8080"]
+gen 13, 2023 10:33:42 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Catalina]
+gen 13, 2023 10:33:43 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+WARNING: The web application [tomcattest] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/java.io.WinNTFileSystem.canonicalize0(Native Method)
+ java.base@17.0.5/java.io.WinNTFileSystem.canonicalize(WinNTFileSystem.java:462)
+ java.base@17.0.5/java.io.File.getCanonicalPath(File.java:626)
+ org.apache.catalina.webresources.AbstractFileResourceSet.file(AbstractFileResourceSet.java:94)
+ org.apache.catalina.webresources.DirResourceSet.getResource(DirResourceSet.java:101)
+ org.apache.catalina.webresources.StandardRoot.getResourceInternal(StandardRoot.java:281)
+ org.apache.catalina.webresources.CachedResource.validateResource(CachedResource.java:105)
+ org.apache.catalina.webresources.Cache.getResource(Cache.java:96)
+ org.apache.catalina.webresources.StandardRoot.getResource(StandardRoot.java:216)
+ org.apache.catalina.webresources.StandardRoot.getClassLoaderResource(StandardRoot.java:225)
+ org.apache.catalina.loader.WebappClassLoaderBase.findResource(WebappClassLoaderBase.java:954)
+ org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1078)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833)
+gen 13, 2023 10:33:43 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+WARNING: The web application [S23L06] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+gen 13, 2023 10:33:43 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+WARNING: The web application [S23L06] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/java.lang.Object.wait(Native Method)
+ java.base@17.0.5/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:70)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833)
+gen 13, 2023 10:33:43 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+WARNING: The web application [S23L06] appears to have started a thread named [pool-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833)
+gen 13, 2023 10:33:43 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+WARNING: The web application [firstProject] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:69)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833)
+gen 13, 2023 10:33:43 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-8080"]
+gen 13, 2023 10:33:43 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-nio-8080"]
+gen 13, 2023 10:33:47 PM org.apache.catalina.loader.WebappClassLoaderBase checkStateForResourceLoading
+INFO: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1432)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1057)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkContextClassLoaders(AbandonedConnectionCleanupThread.java:96)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:69)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+gen 13, 2023 10:33:48 PM org.apache.catalina.loader.WebappClassLoaderBase checkStateForResourceLoading
+INFO: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1432)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1057)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+gen 13, 2023 10:33:48 PM org.apache.catalina.loader.WebappClassLoaderBase checkStateForResourceLoading
+INFO: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1432)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1057)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkContextClassLoaders(AbandonedConnectionCleanupThread.java:96)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:69)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+

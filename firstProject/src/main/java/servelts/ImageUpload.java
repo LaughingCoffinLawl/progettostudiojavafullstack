@@ -22,6 +22,7 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 public class ImageUpload extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
+	//path dove le immagini vengono storate (locale per il momento)
 	public String path = "c:/images/";
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -35,11 +36,15 @@ public class ImageUpload extends HttpServlet {
 		case "filesUpload":
 			filesUpload(request, response);
 			break;
+		case "updateInformation":
+			updateInformation(request, response);
+			break;
 		//upload.java action del form
 		/*case "listingImages":
 			listingImages(request, response);
 			break;*/
 		default:
+			//in caso action sia vuota, reindirizza alla pagina di upload (index)
 			request.getRequestDispatcher("upload.jsp").forward(request, response);;
 		}
 	}
@@ -64,18 +69,33 @@ public class ImageUpload extends HttpServlet {
 		}
 	}
 	
+	private void updateInformation(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException {
+		int fileId = Integer.parseInt(request.getParameter("fileId"));
+		String label = request.getParameter("label");
+		String caption = request.getParameter("caption");
+		
+		UploadImages image = new UploadImages(fileId, label, caption);
+		new ImagesDAO().updateInformation(image);
+		listingImages(request, response);
+	}
+
 	private void listingImages(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
+		//richiama metodo da ImagesDAO per query
 		List <UploadImages> images = new ImagesDAO().listFiles();
+		//setta attributi
 		request.setAttribute("images", images);
 		request.setAttribute("path", path);
+		//reindirizza a pagina listImages
 		request.getRequestDispatcher("listImages.jsp").forward(request, response);
 	}
 
 	public void filesUpload (HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		//metodo che uploada i files, copiandoli nel path selezionato
+		//up multiplo consentito
 		ServletFileUpload upload = new ServletFileUpload(new DiskFileItemFactory());
-	      
 	      try {
 			List<FileItem> images = upload.parseRequest(request);
 			for(FileItem image: images) {
@@ -90,10 +110,10 @@ public class ImageUpload extends HttpServlet {
 					new ImagesDAO().addFileDetails(new UploadImages(name));
 					image.write(file);
 				}	
-				listingImages(request, response);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	    listingImages(request, response);
 	}
 }
