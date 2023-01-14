@@ -64,19 +64,49 @@ public class ImageUpload extends HttpServlet {
 		case "listingImages":
 			listingImages(request, response);
 			break;
+		case "viewImage":
+			viewImage(request, response);
+			break;
+		case "deleteImage":
+			deleteImage(request, response);
+			break;
 		default:
 			request.getRequestDispatcher("upload.jsp").forward(request, response);;
 		}
 	}
 	
+	private void deleteImage(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException {
+		//prense il fileid dall'url creato
+		int fileId = Integer.parseInt(request.getParameter("fileId"));
+		UploadImages image = new ImagesDAO().getFile(fileId);
+		new ImagesDAO().deleteFile(fileId);
+		// logica per eliminare i file localmente
+		File fileOnDisk = new File(path+image.getFileName());
+		if(fileOnDisk.delete()) {
+			System.out.println("File got deleted from file system");
+		} else {
+			System.out.println("File not deleted from file system");
+		}
+		listingImages(request, response);
+	}
+
+	private void viewImage(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException {
+		//prende il fileid dall'url creato dal viewImage
+		int fileId = Integer.parseInt(request.getParameter("fileId")) ;
+		UploadImages image = new ImagesDAO().getFile(fileId);
+		request.setAttribute("image", image);
+		request.setAttribute("path", path);
+		request.getRequestDispatcher("ViewImage.jsp").forward(request, response);
+	}
+
 	private void updateInformation(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
 		int fileId = Integer.parseInt(request.getParameter("fileId"));
 		String label = request.getParameter("label");
 		String caption = request.getParameter("caption");
-		
-		UploadImages image = new UploadImages(fileId, label, caption);
-		new ImagesDAO().updateInformation(image);
+		new ImagesDAO().updateInformation(fileId, label, caption);
 		listingImages(request, response);
 	}
 

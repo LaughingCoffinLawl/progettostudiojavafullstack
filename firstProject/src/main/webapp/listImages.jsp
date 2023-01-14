@@ -44,9 +44,15 @@
 	               "Caption: <input type='text' name='caption'/><br/><br/>"+
 	               "<input type='hidden' name='fileId' value='"+fileId+"'/>"+
 	               "<input type='hidden' name='action' value='updateInformation'/>"+
+	               "<input type='hidden' name='fileName' value='"+image.getFileName()+"'/>"+
 	               "<input type='submit' value='Update'>"+
 	               "</form>";
-	               out.print( "<td>"+form+"</td></tr>");
+	               out.print( "<td>"+form+"</td>");
+	               out.print("<td><ul><li><a href='"+request.getContextPath()+"/ImageUpload?action=viewImage&fileId=" +image.getId()+
+	               			 "'>View</a></li>");
+	               out.print("<li><a href='" + request.getContextPath() + "/ImageUpload?action=deleteImage&fileId="
+							+ image.getId()
+							+ "' onclick=\"if(!confirm('Are you sure to delete the user?')) return false\">Delete</a></li></ul></td></tr>");
 	}
 %>
 </table>

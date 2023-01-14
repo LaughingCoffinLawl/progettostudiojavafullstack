@@ -30,10 +30,36 @@ public class ImagesDAO {
 		//mySession.getTransaction().commit();
 		return images;
 	}
-	public void updateInformation(UploadImages image) {
+	
+	/*public void updateInformation(UploadImages image) {
 		Session session = myFactory.getCurrentSession();
 		session.beginTransaction();
 		session.update(image);
 		session.getTransaction().commit();
+	}*/
+	
+	public void updateInformation(int id, String label, String caption) {
+		Session session = myFactory.getCurrentSession();
+		session.beginTransaction();
+		UploadImages image = session.get(UploadImages.class, id);
+		image.setLabel(label);
+		image.setCaption(caption);
+		session.getTransaction().commit();
 	}
+	
+	public UploadImages getFile(int fileId) {
+		Session session = myFactory.getCurrentSession();
+		session.beginTransaction();
+		UploadImages image = session.get(UploadImages.class, fileId);
+		session.getTransaction().commit();
+		return image;
+	}
+	public void deleteFile(int fileId) {
+		Session session = myFactory.getCurrentSession();
+		session.beginTransaction();
+		UploadImages image = session.get(UploadImages.class, fileId);
+		session.delete(image);
+		session.getTransaction().commit();
+	}
+	
 }
